@@ -1,0 +1,16 @@
+---
+- name: create a user
+  hosts: linux
+  tasks:
+
+  - user:
+      name: user1
+      state: present
+  
+  - user:
+      name: user2
+      state: present
+   
+  - user:
+      name: user3
+      state: present
