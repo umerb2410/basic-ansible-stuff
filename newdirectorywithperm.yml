@@ -1,0 +1,8 @@
+---
+  - hosts: linux
+    tasks:
+    - name: create a new directory
+      file:
+        path: /new/newfolder
+        state: directory
+        mode: "u=rw,g=wx,o=rwx"
