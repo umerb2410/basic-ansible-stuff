@@ -1,0 +1,9 @@
+---
+- hosts: linux
+  tasks:
+  - name: create a file with content
+    copy:
+      dest: /new/newfolder/test1.txt
+      content: |
+        hello my name is centos
+        learning ansible is not fun 
