@@ -1,0 +1,8 @@
+---
+  - name: install nano
+    hosts: linux
+    tasks:
+      - name: ensure nano is there
+        yum:
+          name: nano
+          state: latest
